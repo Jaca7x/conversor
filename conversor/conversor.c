@@ -280,7 +280,7 @@ int main()
     case 5: //Volume
         printf("Selecione uma opção\n");
         printf("1 - Litros para mililitros\n");
-        pritf("2 - Litros para galões (EUA)\n");
+        printf("2 - Litros para galões (EUA)\n");
         printf("3 - Litros para xícaras (EUA)\n");
         scanf("%d", &opcaoVolume);
 
