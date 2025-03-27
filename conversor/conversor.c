@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <windows.h>
+#ifdef _WIN32
+    #include <windows.h>
+#endif
 
 #define COTACAO_DOLAR 5.76
 #define CAMBIO_EURO 0.85
@@ -13,7 +15,9 @@ int main()
 {
     // Definir idioma e codificação UTF-8
     setlocale(LC_ALL, "pt_BR.UTF-8");
+#ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8); // Configurar console para UTF-8
+#endif /* ifdef MACRO */
 
     // Opções
     int opcao, opcaoMoedas, opcaoDolar, opcaoReal, opcaoEuro, opcaoMedidas, opcaoMetro, opcaoQuilo, opcaoVolume,
