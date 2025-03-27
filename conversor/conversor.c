@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #ifdef _WIN32
-    #include <windows.h>
+#include <windows.h>
 #endif
 
 #define COTACAO_DOLAR 5.76
@@ -117,7 +117,6 @@ int main()
                 break;
             }
             break;
-
         case 3: //Euro
             printf("Selecione uma opção\n");
             printf("1 - Euro para real\n");
@@ -191,7 +190,7 @@ int main()
                 printf("Selcione uma opção válida\n");
                 break;
             }
-        break;
+            break;
         case 2: //Massa/Peso
             printf("Selecione uma opção\n");
             printf("1 - Quilogramas para gramas\n");
@@ -226,7 +225,7 @@ int main()
                 printf("Selecione uma opção válida\n");
                 break;
             }
-        break;
+            break;
         case 3: //Tempo
             printf("Selecione uma opção\n");
             printf("1 - Horas para minutos\n");
@@ -253,67 +252,68 @@ int main()
                 printf("Selcione uma opção válida");
                 break;
             }
-        }
-        break;
-    case 4: //Temperatura
-        printf("Selecione uma opção:\n");
-        printf("1 - Celsius para Fahrenheit\n");
-        printf("2 - Celsius para Kelvin\n");
-        scanf("%d", &opcaoTemp);
+            break;
+        case 4: //Temperatura
+            printf("Selecione uma opção:\n");
+            printf("1 - Celsius para Fahrenheit\n");
+            printf("2 - Celsius para Kelvin\n");
+            scanf("%d", &opcaoTemp);
 
-        switch (opcaoTemp)
-        {
-        case 1: //Celsius para Fahrenheit
-            printf("Digite a temperatura em Celsius(°C) para converte para fahrenheit\n");
-            scanf("%f", &celsius);
-            fahrenheit = (celsius * 1.8) + 32;
-            printf("%f Celsius são %f fahrenheit", celsius, fahrenheit);
+            switch (opcaoTemp)
+            {
+            case 1: //Celsius para Fahrenheit
+                printf("Digite a temperatura em Celsius(°C) para converte para fahrenheit\n");
+                scanf("%f", &celsius);
+                fahrenheit = (celsius * 1.8) + 32;
+                printf("%f Celsius são %f fahrenheit", celsius, fahrenheit);
+                break;
+            case 2: //Celsius para Kelvin
+                printf("Digite a temperatura em Celsius(°C) para converte para kelvin\n");
+                scanf("%f", &celsius);
+                kelvin = celsius + 273.15;
+                printf("%f Celsius são %f kelvin", celsius, kelvin);
+                break;
+            default:
+                printf("Selecione uma opção válida\n");
+                break;
+            }
             break;
-        case 2: //Celsius para Kelvin
-            printf("Digite a temperatura em Celsius(°C) para converte para kelvin\n");
-            scanf("%f", &celsius);
-            kelvin = celsius + 273.15;
-            printf("%f Celsius são %f kelvin", celsius, kelvin);
-            break;
-        default:
-            printf("Selecione uma opção válida\n");
-            break;
-        }
-    case 5: //Volume
-        printf("Selecione uma opção\n");
-        printf("1 - Litros para mililitros\n");
-        printf("2 - Litros para galões (EUA)\n");
-        printf("3 - Litros para xícaras (EUA)\n");
-        scanf("%d", &opcaoVolume);
+        case 5: //Volume
+            printf("Selecione uma opção\n");
+            printf("1 - Litros para mililitros\n");
+            printf("2 - Litros para galões (EUA)\n");
+            printf("3 - Litros para xícaras (EUA)\n");
+            scanf("%d", &opcaoVolume);
 
-        switch (opcaoVolume)
-        {
-        case 1: //Litros para mililitros
-            printf("Digite a quantidade de litros deseja converter em mililitros\n");
-            printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
-            scanf("%f", &litros);
-            mililitros = litros * 1000;
-            printf("%f litros são %f mililitros", litros, mililitros);
-            break;
-        case 2: //Litros para galões(EUA)
-            printf("Digite a quantidade de litros deseja converter para galões(EUA)\n");
-            printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
-            scanf("%f", &litros);
-            galao = litros / 3.785;
-            printf("%f litros são %f galões", litros, galao);
-            break;
-        case 3: //Litros para xícaras(EUA)
-            printf("Digite a quantidade de litros deseja converter para xícaras(EUA)\n");
-            printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
-            scanf("%f", &litros);
-            xicara = litros * 4.167;
-            printf("%f litros são %f xícaras", litros, xicara);
-            break;
-        default:
-            printf("Selecione uma opção válida\n");
+            switch (opcaoVolume)
+            {
+            case 1: //Litros para mililitros
+                printf("Digite a quantidade de litros deseja converter em mililitros\n");
+                printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
+                scanf("%f", &litros);
+                mililitros = litros * 1000;
+                printf("%f litros são %f mililitros", litros, mililitros);
+                break;
+            case 2: //Litros para galões(EUA)
+                printf("Digite a quantidade de litros deseja converter para galões(EUA)\n");
+                printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
+                scanf("%f", &litros);
+                galao = litros / 3.785;
+                printf("%f litros são %f galões", litros, galao);
+                break;
+            case 3: //Litros para xícaras(EUA)
+                printf("Digite a quantidade de litros deseja converter para xícaras(EUA)\n");
+                printf("(CASO SEJA UM VALOR COM VÍRGULA UTILIZE PONTOS)\n");
+                scanf("%f", &litros);
+                xicara = litros * 4.167;
+                printf("%f litros são %f xícaras", litros, xicara);
+                break;
+            default:
+                printf("Selecione uma opção válida\n");
+                break;
+            }
             break;
         }
-        break;
     default:
         printf("Selecione uma opção válida\n");
         break;
