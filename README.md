@@ -45,5 +45,5 @@
 
 ### Volume
 - Litros (l) ➡ mililitros (ml)
-- Litros (l) ➡ galões(EUA)
-- Litros (l) ➡ xícaras(EUA)
+- Litros (l) ➡ galões (EUA)
+- Litros (l) ➡ xícaras (EUA)
