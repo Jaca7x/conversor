@@ -231,7 +231,7 @@ int main()
             printf("Selecione uma opção\n");
             printf("1 - Horas para minutos\n");
             printf("2 - Horas para segundos\n");
-            scanf("%d", opcaoTempo);
+            scanf("%d", &opcaoTempo);
 
             switch (opcaoTempo)
             {
