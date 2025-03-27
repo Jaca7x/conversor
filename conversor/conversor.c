@@ -191,7 +191,7 @@ int main()
                 printf("Selcione uma opção válida\n");
                 break;
             }
-            break;
+        break;
         case 2: //Massa/Peso
             printf("Selecione uma opção\n");
             printf("1 - Quilogramas para gramas\n");
@@ -226,6 +226,7 @@ int main()
                 printf("Selecione uma opção válida\n");
                 break;
             }
+        break;
         case 3: //Tempo
             printf("Selecione uma opção\n");
             printf("1 - Horas para minutos\n");
@@ -253,6 +254,7 @@ int main()
                 break;
             }
         }
+        break;
     case 4: //Temperatura
         printf("Selecione uma opção:\n");
         printf("1 - Celsius para Fahrenheit\n");
